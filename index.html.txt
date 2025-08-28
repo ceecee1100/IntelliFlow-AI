@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IntelliFlow AI - Done-for-You SaaS</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background: #f9fafc;
+color: #333;
+}
+header {
+background: #0056d2;
+color: white;
+padding: 20px;
+text-align: center;
+}
+header h1 {
+margin: 0;
+}
+nav {
+margin-top: 10px;
+}
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 10px;
+}
+.hero {
+padding: 60px 20px;
+text-align: center;
+background: #eaf1fb;
+}
+.hero h2 {
+margin-bottom: 20px;
+}
+.btn {
+display: inline-block;
+background: #0056d2;
+color: white;
+padding: 12px 25px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+}
+.features {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 40px 20px;
+}
+.feature {
+flex: 1 1 300px;
+margin: 15px;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 8px;
+background: white;
+}
+footer {
+text-align: center;
+padding: 20px;
+background: #333;
+color: white;
+margin-top: 30px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>IntelliFlow AI</h1>
+<p>Done-for-You Google AI SaaS</p>
+<nav>
+<a href="#features">Features</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<section class="hero">
+<h2>Automate Your Business with AI</h2>
+<p>Plug-and-play Google AI algorithms tailored for your needs. No coding. No stress.</p>
+<a href="#pricing" class="btn">Get Started</a>
+</section>
+<section id="features" class="features">
+<div class="feature">
+<h3>Plug & Play AI</h3>
+<p>No developers needed. Connect your data and let AI handle the rest.</p>
+</div>
+<div class="feature">
+<h3>Scalable Infrastructure</h3>
+<p>Powered by Google Cloud AI for enterprise-level reliability.</p>
+</div>
+<div class="feature">
+<h3>Customizable Models</h3>
+<p>Choose pre-trained algorithms or fine-tune for your industry.</p>
+</div>
+</section>
+<section id="pricing" class="hero">
+<h2>Simple Pricing</h2>
+<p>Start for free, upgrade as you grow.</p>
+<p><strong>Free Trial → $0</strong></p>
+<p><strong>Pro Plan → $49/month</strong></p>
+<p><strong>Enterprise → Contact us</strong></p>
+<a href="#contact" class="btn">Start Free Trial</a>
+</section>
+<section id="contact" class="hero">
+<h2>Contact Us</h2>
+<p>Email: support@intelliflowai.com</p>
+</section>
+<footer>
+<p>© 2025 IntelliFlow AI | Powered by Google Cloud</p>
+</footer>
+</body>
+</html>
