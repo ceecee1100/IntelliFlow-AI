@@ -114,17 +114,6 @@ margin-top: 30px;
               style="position:absolute; top:10px; right:15px; cursor:pointer; font-weight:bold; font-size:18px;">
               &times;
         </span>
-        
-        <h2>Start Your Free Trial</h2>
-        <p>Enter your email to continue:</p>
-        
-        <form onsubmit="redirectToStan(event)">
-            <input type="email" id="userEmail" placeholder="Your email" required 
-                   style="width:100%; padding:10px; margin:10px 0;">
-            <button type="submit" class="btn" style="width:100%;">Continue</button>
-        </form>
-    </div>
-</div>
 <section id="contact" class="hero">
 <h2>Contact Us</h2>
 <p>Email: support@intelliflowai.com</p>
@@ -140,42 +129,17 @@ margin-top: 30px;
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCMkIH5rMUlUZEkr4VH3P25NojUcjwEqf0",
-  authDomain: "intelliflow-ai.firebaseapp.com",
-  projectId: "intelliflow-ai",
-  storageBucket: "intelliflow-ai.firebasestorage.app",
-  messagingSenderId: "662768717235",
-  appId: "1:662768717235:web:1f5ca5564136cbe6708fc6",
-  measurementId: "G-PQPGETZ50L"
-  
-};
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-}
-</script>
   <!-- Your Start Free Trial button -->
-<a href="javascript:void(0)" class="btn" onclick="openPopup()">Start Free Trial</a> 
+<a href="javascript:void(0)" class="btn" onclick="openPopup()">Start Free Trial</a>
+
 <!-- Popup Container -->
-<div id="popupForm" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
-background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
-
+<div id="popupForm" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
   <div style="background:#fff; padding:30px; border-radius:8px; width:300px; text-align:center; position:relative;">
-    <span onclick="closePopup()" 
-          style="position:absolute; top:10px; right:15px; cursor:pointer; font-weight:bold; font-size:18px;">&times;</span>
-
+    <span onclick="closePopup()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-weight:bold; font-size:18px;">&times;</span>
     <h2>Start Your Free Trial</h2>
     <p>Enter your email to continue:</p>
-
     <form onsubmit="redirectToStan(event)">
-      <input type="email" id="userEmail" placeholder="Your email" required 
-             style="width:100%; padding:10px; margin:10px 0;">
+      <input type="email" id="userEmail" placeholder="Your email" required style="width:100%; padding:10px; margin:10px 0;">
       <button type="submit" class="btn" style="width:100%;">Continue</button>
     </form>
   </div>
@@ -183,27 +147,28 @@ background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
 
 <script>
 function openPopup() {
-    document.getElementById("popupForm").style.display = "flex";
+  document.getElementById("popupForm").style.display = "flex";
 }
 
 function closePopup() {
-    document.getElementById("popupForm").style.display = "none";
+  document.getElementById("popupForm").style.display = "none";
 }
 
 function redirectToStan(event) {
-    event.preventDefault(); // stop normal form submit
-    const email = document.getElementById("userEmail").value;
+  event.preventDefault(); // stop normal form submit
+  const email = document.getElementById("userEmail").value;
 
-    // (Optional) Save email to Firebase later if you want
-    console.log("User email:", email);
+  // (Optional) Save email somewhere later if you want
+  console.log("User email:", email);
 
-    // Redirect to your Stan store
-    const stanLink = "https://stan.store/corieee";
-    window.location.href = stanLink;
+  // Redirect to your Stan store
+  const stanLink = "https://stan.store/corieee";
+  window.location.href = stanLink;
 }
 </script>
 </body>
 </html>
+
 
 
 
