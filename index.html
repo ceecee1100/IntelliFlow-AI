@@ -161,13 +161,31 @@ function redirectToStan(event) {
   // (Optional) Save email somewhere later if you want
   console.log("User email:", email);
 
-  // Redirect to your Stan store
-  const stanLink = "https://stan.store/corieee/p/google-ai-download";
-  window.location.href = stanLink;
+ // Redirect to your Stan store
+   const stanLink = "https://stan.store/corieee/p/google-ai-download";
+   window.location.href = stanLink;
 }
+
+// =====================
+// Firebase Config Block
+// =====================
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID",
+  measurementId: "YOUR_MEASUREMENT_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 </script>
 </body>
 </html>
+
 
 
 
