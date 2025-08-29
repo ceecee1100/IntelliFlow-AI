@@ -104,7 +104,27 @@ margin-top: 30px;
 <p><strong>Free Trial → $0</strong></p>
 <p><strong>Pro Plan → $49/month</strong></p>
 <p><strong>Enterprise → Contact us</strong></p>
-<a href="#" class="btn" onclick="openPopup()">Start Free Trial</a> 
+<a href="javascript:void(0)" class="btn" onclick="openPopup()">Start Free Trial</a> 
+  <!-- Popup Container -->
+<div id="popupForm" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+    background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
+    
+    <div style="background:#fff; padding:30px; border-radius:8px; width:300px; text-align:center; position:relative;">
+        <span onclick="closePopup()" 
+              style="position:absolute; top:10px; right:15px; cursor:pointer; font-weight:bold; font-size:18px;">
+              &times;
+        </span>
+        
+        <h2>Start Your Free Trial</h2>
+        <p>Enter your email to continue:</p>
+        
+        <form onsubmit="redirectToStan(event)">
+            <input type="email" id="userEmail" placeholder="Your email" required 
+                   style="width:100%; padding:10px; margin:10px 0;">
+            <button type="submit" class="btn" style="width:100%;">Continue</button>
+        </form>
+    </div>
+</div>
 <section id="contact" class="hero">
 <h2>Contact Us</h2>
 <p>Email: support@intelliflowai.com</p>
@@ -141,8 +161,7 @@ const firebaseConfig = {
 }
 </script>
   <!-- Your Start Free Trial button -->
-<a href="#" class="btn" onclick="openPopup()">Start Free Trial</a>
-
+<a href="javascript:void(0)" class="btn" onclick="openPopup()">Start Free Trial</a> 
 <!-- Popup Container -->
 <div id="popupForm" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
 background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
@@ -185,6 +204,7 @@ function redirectToStan(event) {
 </script>
 </body>
 </html>
+
 
 
 
