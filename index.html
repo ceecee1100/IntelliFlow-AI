@@ -171,9 +171,30 @@ function redirectToStan(event) {
 }
   ;
   }
+<script>
+function openPopup() {
+  document.getElementById("popupForm").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popupForm").style.display = "none";
+}
+
+function redirectToStan(event) {
+  event.preventDefault(); // stop normal form submit
+  const email = document.getElementById("userEmail").value;
+  
+  // (Optional) Save email to Firebase later if you want
+  console.log("User email:", email);
+
+  // Redirect to your Stan store
+  const stanLink = "https://stan.store/corieee";
+  window.location.href = stanLink;
+}
 </script>
 </body>
 </html>
+
 
 
 
